@@ -2,9 +2,6 @@
 // Recibe el nombre de la imagen como parámetro
 def call(String imageName) {
     
-    stage('Clonar repositorio') {
-        checkout scm
-    }
 
     stage('Build y Push a Docker Hub') {
         sh """
